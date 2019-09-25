@@ -1,0 +1,35 @@
+@font-face { 
+	font-family: "EntypoRegular"; 
+	src: url("../font/Entypo.woff"); 
+}
+
+.entypo {
+   font-family: 'EntypoRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+.main-navigation ul li a {
+    background-image: unset !important;
+}
+
+.main-navigation ul li a:before {
+    content:"";
+    font-family: "EntypoRegular";
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    font-size: 3em;
+    position: absolute;
+    left: 9px;
+    top: 0;
+    bottom: 0;
+    line-height: 1;
+}
+
+.main-navigation ul .icohome1 		a:before {content:'\2302';}
+.main-navigation ul .icolektion1 	a:before {content:"";content: "\335";content: "";}
+.main-navigation ul .bp-profile-nav a:before {content:"+";}
+.main-navigation ul .icostatus1 	a:before {content:"7"}
+.main-navigation ul .icoforum1 		a:before {content: "9";}
+.main-navigation ul .icohilfe1 		a:before {content: 'b';}

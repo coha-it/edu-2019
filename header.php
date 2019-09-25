@@ -17,8 +17,17 @@
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="https://coha.happiness-edutainment.de/wp-content/themes/edu/img/favicon.ico" type="image/x-icon" /> 
-<link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,300,300italic,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+<!-- <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,300,300italic,700' rel='stylesheet' type='text/css'> -->
+<!-- <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'> -->
+
+<!-- Lato and Tisa Font -->
+<link rel="stylesheet" href="https://use.typekit.net/cvy3vwb.css">
+
+<!-- Entypo Font -->
+<!-- <link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/lib/css/entypo.css'; ?>" type="text/css"/> -->
+
+<!-- Material Icons -->
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/lib/css/material-icons.css'; ?>" type="text/css"/>
 
 <?php wp_head(); ?>
 </head>
@@ -30,14 +39,14 @@
 			<div id="page" class="site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'edu' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+					<header id="masthead" class="site-header" role="banner">
 			
 						<div class="sub-navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'subnary', 'menu_id' => 'subnary-menu' ) ); ?>
 					</div>
 					
 					<div class="site-branding">
-						<a href="https://expert.happiness-edutainment.de/"><img src="https://expert.happiness-edutainment.de/wp-content/themes/edu-2019/img/chedu_logo_v2.png" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
+						<a href="https://expert.happiness-edutainment.de/"><img src="<?php echo get_stylesheet_directory_uri() . '/img/corporate-happiness-logo.svg'; ?>" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">

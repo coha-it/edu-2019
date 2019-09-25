@@ -4,9 +4,145 @@
  Author:       Corporate Happiness
  Author URI:   httpw://www.corporate-happienss.de
  Template:     edu
- Version:      1.0
+ Version:      1.1
 */
 
-.site-info {
-    color: #cecece;
+body, button, input, select, textarea {
+    font-family: 'Lato', 'Roboto', sans-serif;
+    font-size: 15px;
 }
+
+h1, h2 {
+    font-family: 'ff-tisa-web-pro', 'Lato', 'Roboto', sans-serif;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+a {color: #2d4e58;}
+a:visited {color: #617981;}
+a:hover {color: #afc5cb;}
+
+.page-content a:hover,
+.entry-content a:hover,
+.entry-summary a:hover {
+    font-weight: normal;
+}
+
+
+/* MATERIAL ICONS */
+.material-icons,
+.main-navigation ul li a:before,
+.lesson_incomplete.list_arrow:before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.main-navigation ul li a {background-image: unset !important;}
+.main-navigation ul li a:before {
+    content:"";
+    position: absolute;
+    left: 22px;
+    top: 0px;
+    bottom: 0;
+    vertical-align: middle;
+    line-height: 0;
+    font-size: 1.75rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    transform: translateX(-50%);
+}
+
+.main-navigation ul .icohome1       a:before {content: "home";}
+.main-navigation ul .icolektion1    a:before {content: "school";}
+.main-navigation ul .bp-profile-nav a:before {content:"person";}
+.main-navigation ul .icostatus1     a:before {content:"account_balance"; content: "license"; content:"grade";}
+.main-navigation ul .icoforum1      a:before {content: "forum";}
+.main-navigation ul .icohilfe1      a:before {content: 'help';}
+
+
+
+
+.wpProQuiz_button, .wpProQuiz_button:hover {background: #efd84d !important;color: #4F4F4F !important;text-shadow: unset !important;}
+
+.widget-area .omsc-toggle-title {
+    background-color: #efd84d;
+    border-color: transparent;
+}
+
+#ld_course_list .btn-primary,
+#ld_course_list .btn-primary:hover, #ld_course_list .btn-primary:focus, #ld_course_list .btn-primary:active, #ld_course_list .btn-primary.active, #ld_course_list .open .dropdown-toggle.btn-primary {
+    border-color:#efd84d !important;
+    background-color: #efd84d !important;
+}
+
+h1.widget-title,
+h2.widget-title,
+#learndash_next_prev_link a {
+    border-color: transparent;
+    background: #efd84d;
+}
+
+#learndash_next_prev_link a {
+    background: #efd84d;
+    color: #4F4F4F !important;
+}
+
+#learndash_next_prev_link a:hover {
+    background: #d6c140;
+}
+
+.site-branding {padding-top: 1em;padding-left: 5px;text-align: center;}
+.site-branding a {}
+.site-branding a img {width: 165px;min-width: 160px;width: 11rem;max-width: 180px;}
+
+.site-footer {}
+.site-footer a {color: #efd84d;}
+
+.bp-user .bp-profile-nav > a,
+.main-navigation li.current-menu-item > a,
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+    transition: 200ms ease-in-out;
+    background-color: #efd84d;
+    border-color: #efd84d;
+}
+
+/* Kursnavi */
+.lesson_incomplete.list_arrow {}
+.lesson_incomplete.list_arrow {position: relative;background-image: none !important;}
+.lesson_incomplete.list_arrow:before {position: absolute;left: -8px;top: 4px;color: #617981;font-size: 25px;}
+.lesson_incomplete.list_arrow.collapse:before {content: "arrow_drop_down";}
+.lesson_incomplete.list_arrow.expand:before {content: "arrow_drop_up";}
+
+
+/* Navigation Li */
+.main-navigation ul li a {font-weight: 500;color: #465961;letter-spacing: .07em;font-size: 1rem;}
+
+/* @media screen and (max-width: 801px) {} */
+/* @media screen and (max-width: 501px) {} */
