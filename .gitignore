@@ -1,2 +1,6 @@
 # Ignore Brand-Icons
 /img/brands
+
+# .htaccess in brands
+!/img/brands/.htaccess 
+
