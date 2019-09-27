@@ -37,6 +37,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php $sBrandsPath = scandir(get_stylesheet_directory() . '/img/brands/'); ?>
+	<?php $sBrandFile = $sBrandsPath[2]; ?>
+	<?php if($sBrandFile): ?>
+		<div class="header-brand full">
+			<img src="<?php echo get_stylesheet_directory_uri() . '/img/brands/'.$sBrandFile ?>">
+		</div>
+	<?php endif; ?>	
     <div class="header-area full">
         <div class="main-page">
 		
