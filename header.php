@@ -32,44 +32,43 @@
 <?php wp_head(); ?>
 
 <!-- 2k19 Style -->
-<!-- <link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/style-2k19.css'; ?>" type="text/css"/> -->
+<?php /* <link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/style-2k19.css'; ?>" type="text/css"/> */ ?>
+
+<!-- Custom Styling  -->
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/lib/css/subdomains/'. array_shift((explode('.', $_SERVER['HTTP_HOST']))). '.css'; ?>" type="text/css"/>
 
 </head>
 
 <body <?php body_class(); ?>>
-	<?php $sBrandsPath = scandir(get_stylesheet_directory() . '/img/brands/'); ?>
-	<?php $sBrandFile = $sBrandsPath[2]; ?>
-	<?php if($sBrandFile): ?>
-		<div class="header-brand full">
-			<img src="<?php echo get_stylesheet_directory_uri() . '/img/brands/'.$sBrandFile ?>">
-		</div>
-	<?php endif; ?>	
+
+	<div class="header-brand full">
+		<div class="image"></div>
+		<?php $brandImg = get_stylesheet_directory_uri() . '/img/brands/brand.'; ?>
+		<style> body .header-brand.full .image {
+			background-image: 	url(<?php echo $brandImg?>svg), 
+								url(<?php echo $brandImg?>png), 
+								url(<?php echo $brandImg?>jpg);
+		} </style>
+	</div>
+
     <div class="header-area full">
         <div class="main-page">
-		
 			<div id="page" class="site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'edu' ); ?></a>
-
-					<header id="masthead" class="site-header" role="banner">
-			
-						<div class="sub-navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'subnary', 'menu_id' => 'subnary-menu' ) ); ?>
+				<header id="masthead" class="site-header" role="banner">
+					<div class="sub-navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'subnary', 'menu_id' => 'subnary-menu' ) ); ?>
 					</div>
-					
+				
 					<div class="site-branding">
 						<a href="https://expert.happiness-edutainment.de/"><img src="<?php echo get_stylesheet_directory_uri() . '/img/corporate-happiness-logo.svg'; ?>" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Hauptmenü', 'edu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu'  ) ); ?>
-			
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Hauptmenü', 'edu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu'  ) ); ?>
 					</nav><!-- #site-navigation -->
-			
-					
-
-			</header><!-- #masthead -->
-			
+				</header><!-- #masthead -->
         </div>
     </div>			
 			

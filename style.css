@@ -181,3 +181,16 @@ section.widget .textwidget {
     background: #fff;
 }*/
 
+body .header-brand.full {
+  display: none;
+}
+
+body .header-brand.full .image {
+  height: 50px;
+  width: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px 0 10px;
+}
+
