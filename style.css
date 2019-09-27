@@ -9,8 +9,13 @@
 
 body, button, input, select, textarea {
     font-family: 'Lato', 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
+
+
+@media screen and (min-width: 1520px) {html body {font-size: 105%;} }
+@media screen and (min-width: 1920px) {html body {font-size: 110%;} }
+
 
 h1, h2 {
     font-family: 'ff-tisa-web-pro', 'Lato', 'Roboto', sans-serif;
@@ -34,7 +39,8 @@ a:hover {color: #afc5cb;}
 /* MATERIAL ICONS */
 .material-icons,
 .main-navigation ul li a:before,
-.lesson_incomplete.list_arrow:before {
+.lesson_incomplete.list_arrow:before,
+a.arrow:before {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -124,7 +130,13 @@ h2.widget-title,
 .site-footer {}
 .site-footer a {color: #efd84d;}
 
+
+.bbpress.forum-archive .icoforum1 > a,
+.bbpress.forum .icoforum1 > a,
+.bbpress.topic .icoforum1 > a,
+.single-sfwd-courses .icolektion1 > a,
 .bp-user .bp-profile-nav > a,
+.parent-pageid-948 .bp-profile-nav > a,
 .main-navigation li.current-menu-item > a,
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
@@ -136,7 +148,8 @@ h2.widget-title,
 /* Kursnavi */
 .lesson_incomplete.list_arrow {}
 .lesson_incomplete.list_arrow {position: relative;background-image: none !important;}
-.lesson_incomplete.list_arrow:before {position: absolute;left: -8px;top: 4px;color: #617981;font-size: 25px;}
+.lesson_incomplete.list_arrow:before {position: absolute;left: -8px;top: 4px;color: #617981;font-size: 25px;cursor: pointer;}
+.lesson_incomplete.list_arrow:hover:before {color: #a6b4b8;}
 .lesson_incomplete.list_arrow.collapse:before {content: "arrow_drop_down";}
 .lesson_incomplete.list_arrow.expand:before {content: "arrow_drop_up";}
 
@@ -146,3 +159,25 @@ h2.widget-title,
 
 /* @media screen and (max-width: 801px) {} */
 /* @media screen and (max-width: 501px) {} */
+
+
+a.arrow {border-color: #efd84d;background-image: unset;font-size: 1.25em;position: relative;text-decoration: none;}
+a.arrow:hover {background-color: #efd84d; color: black;}
+a.arrow:before {content: "arrow_forward";position: absolute;left: 12px;top: 0;bottom: 0;display: flex;align-items: center;margin: auto;}
+
+
+.widget .textwidget p span,
+.textwidget p {
+    font-size: inherit !important;
+}
+
+
+/*section.widget {
+    box-shadow: 0px 2px 15px -5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 11px -2px rgba(0, 0, 0, 0.12);
+}
+
+section.widget .textwidget {
+    background: #fff;
+}*/
+

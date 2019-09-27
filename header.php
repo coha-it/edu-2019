@@ -30,6 +30,10 @@
 <link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/lib/css/material-icons.css'; ?>" type="text/css"/>
 
 <?php wp_head(); ?>
+
+<!-- 2k19 Style -->
+<!-- <link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri() . '/style-2k19.css'; ?>" type="text/css"/> -->
+
 </head>
 
 <body <?php body_class(); ?>>
