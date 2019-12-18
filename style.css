@@ -139,7 +139,10 @@ h2.widget-title,
 .parent-pageid-948 .bp-profile-nav > a,
 .main-navigation li.current-menu-item > a,
 .main-navigation li:hover > a,
-.main-navigation li.focus > a {
+.main-navigation li.focus > a,
+.sfwd-topic-template-default .main-navigation ul .icolektion1 a,
+.sfwd-lessons-template-default .main-navigation ul .icolektion1 a
+{
     transition: 200ms ease-in-out;
     background-color: #efd84d;
     border-color: #efd84d;
