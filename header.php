@@ -59,7 +59,7 @@
 					<div class="sub-navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'subnary', 'menu_id' => 'subnary-menu' ) ); ?>
 					</div>
-				
+
 					<div class="site-branding">
 						<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/img/corporate-happiness-logo.svg'; ?>" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
 					</div><!-- .site-branding -->
