@@ -61,7 +61,7 @@
 					</div>
 				
 					<div class="site-branding">
-						<a href="https://expert.happiness-edutainment.de/"><img src="<?php echo get_stylesheet_directory_uri() . '/img/corporate-happiness-logo.svg'; ?>" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
+						<a href="<?php echo get_home_url() ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/img/corporate-happiness-logo.svg'; ?>" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
