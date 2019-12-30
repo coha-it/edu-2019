@@ -90,7 +90,7 @@ a.arrow:before {
 .main-navigation ul .icostatus1     a:before {content:"account_balance"; content: "license"; content:"grade";}
 .main-navigation ul .icoforum1      a:before {content: "forum";}
 .main-navigation ul .icohilfe1      a:before {content: 'help';}
-.main-navigation ul li              a[href*="logout"]:before {content: "exit_to_app";}
+.main-navigation ul .icologout      a:before {content: "exit_to_app";}
 
 
 
