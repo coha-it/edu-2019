@@ -56,18 +56,23 @@
 			<div id="page" class="site">
 				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'edu' ); ?></a>
 				<header id="masthead" class="site-header" role="banner">
-					<div class="sub-navigation">
+					<?php /* <div class="sub-navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'subnary', 'menu_id' => 'subnary-menu' ) ); ?>
 					</div>
+					*/ ?>
 
 					<div class="site-branding">
 						<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/img/corporate-happiness-logo.svg'; ?>" title="Happiness Edutainment Plattform" alt="Happiness Edutainment Plattform"/></a>
-					</div><!-- .site-branding -->
 
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Hauptmenü', 'edu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu'  ) ); ?>
-					</nav><!-- #site-navigation -->
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+								<i class="material-icons icon">menu</i>
+								<span class="text"><?php _e( 'Menü', 'edu' ); ?></span>
+								<div class="coha-shadow"></div>
+							</button>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu'  ) ); ?>
+						</nav><!-- #site-navigation -->
+					</div><!-- .site-branding -->
 				</header><!-- #masthead -->
         </div>
     </div>			
