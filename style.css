@@ -197,3 +197,8 @@ body .header-brand.full .image {
   margin: 5px 0 10px;
 }
 
+/* Disable Header */
+.site-branding a {
+    cursor: default;
+    pointer-events: none;
+}
