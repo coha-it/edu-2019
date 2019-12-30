@@ -40,3 +40,13 @@
 .wp-core-ui .button-primary:focus {
     box-shadow: 0 1px 0 #32373c, 0 0 2px 1px #32373c;
 }
+
+/* Datenschutz Benachrichtigung */
+.login-datenschutz-notiz {
+    display: block;
+    float: none;
+    clear: both;
+    font-size: 12px;
+    opacity: .75;
+    padding-top: 15px;
+}
