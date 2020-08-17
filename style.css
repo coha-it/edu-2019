@@ -85,10 +85,17 @@ a.arrow:before {
 }
 
 .main-navigation ul .icohome1       a:before {content: "home";}
-.main-navigation ul .icolektion1    a:before {content: "school";}
-.main-navigation ul .bp-profile-nav a:before {content:"person";}
-.main-navigation ul .icostatus1     a:before {content:"account_balance"; content: "license"; content:"grade";}
-.main-navigation ul .icoforum1      a:before {content: "forum";}
+.main-navigation ul .icolektion1    a:before,
+.main-navigation ul .menu-item      a[href*=kurs]:before {content: "school";}
+.main-navigation ul .bp-profile-nav a:before,
+.main-navigation ul .menu-item      a[href*=profil]:before,
+.main-navigation ul .menu-item      a[href*=aktivit]:before {content:"person";}
+.main-navigation ul .icostatus1     a:before,
+.main-navigation ul .menu-item      a[href*=status]:before {content:"account_balance"; content: "license"; content:"grade";}
+.main-navigation ul .icoforum1      a:before,
+.main-navigation ul li              a[href*="forum"]:before {content: "forum";}
+.main-navigation ul li              a[href*="community/"]:before {content: "group";}
+.main-navigation ul li              a[href*="messages"]:before {content: "message";}
 .main-navigation ul .icohilfe1      a:before {content: 'help';}
 .main-navigation ul .icologout      a:before {content: "exit_to_app";}
 
@@ -233,4 +240,5 @@ body .header-brand.full .image {
 .main-navigation ul a {
 	padding: 10px 15px 10px 43px;
 }
+
 
