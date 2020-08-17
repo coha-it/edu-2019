@@ -228,3 +228,9 @@ body .header-brand.full .image {
     .main-navigation.toggled    .menu-toggle .coha-shadow {pointer-events: inherit;opacity: 1;}
 
 }
+
+
+.main-navigation ul a {
+	padding: 10px 15px 10px 43px;
+}
+
