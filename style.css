@@ -84,7 +84,8 @@ a.arrow:before {
     transform: translateX(-50%);
 }
 
-.main-navigation ul .icohome1       a:before {content: "home";}
+.main-navigation ul .icohome1       a:before,
+.main-navigation ul .menu-item-home a:before {content: "home";}
 .main-navigation ul .icolektion1    a:before,
 .main-navigation ul .menu-item      a[href*=kurs]:before {content: "school";}
 .main-navigation ul .bp-profile-nav a:before,
@@ -240,5 +241,6 @@ body .header-brand.full .image {
 .main-navigation ul a {
 	padding: 10px 15px 10px 43px;
 }
+
 
 
